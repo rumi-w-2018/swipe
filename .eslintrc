@@ -1,0 +1,43 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "plugins": ["react", "jsx-a11y", "import"],
+  "globals": {
+    "it": false,
+    "expect": false,
+    "describe": false,
+    "navigator": false,
+    "fetch": true
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "printWidth": 120,
+        "jsxBracketSameLine": true
+      }
+    ],
+    "camelcase": 0,
+    "consistent-return": 0,
+    "import/prefer-default-export": 0,
+    "linebreak-style": [0],
+    "no-console": 0,
+    "no-undef": ["error"],
+    "no-unused-expressions": 0,
+    "no-unused-vars": 0,
+    "no-use-before-define": 0,
+    "react/destructuring-assignment": 0,
+    "react/jsx-closing-bracket-location": 0,
+    "react/jsx-filename-extension": [0],
+    "react/no-access-state-in-setstate": 0,
+    "react/sort-comp": [0],
+    "react/prop-types": 0,
+    "react/prefer-stateless-function": [0],
+
+    "arrow-body-style": [0, "as-needed"],
+    "jsx-control-statements/jsx-use-if-tag": 0,
+    "no-restricted-syntax": [1, "DebuggerStatement"] // 1-warn
+  }
+}
